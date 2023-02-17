@@ -1,0 +1,292 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    background: #f4f5fb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.col-gap-20 {
+    column-gap: 20px;
+}
+
+.row-gap-20 {
+    row-gap: 20px;
+}
+
+.flex_50 {
+    flex-basis: 50%;
+}
+
+.flex_70 {
+    flex-basis: 70%;
+}
+
+.flex_30 {
+    flex-basis: 30%;
+}
+
+.green_btn,
+.outline_btn,
+.brown_btn,
+.update_btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.green_btn {
+    color: #fff;
+    /* background: #6EB985; */
+    background: #0d8130;
+    border: 1px solid #0d8130;
+}
+
+.green_btn a {
+    color: #fff;
+}
+
+.outline_btn {
+    color: #4F4F4F;
+    background: #fff;
+    border: 1px solid #4F4F4F;
+}
+
+.green_btn:disabled {
+    background: #929292;
+    border: 1px solid #929292;
+}
+
+.brown_btn {
+    color: #fff;
+    background: #D78B4A;
+    border: 1px solid #D78B4A;
+}
+
+.update_btn {
+    color: #212121;
+    background: #E4EAF6;
+    border: 1px solid #E4EAF6;
+}
+
+.remove-btn {
+    color: #fff;
+    padding: 4px 8px;
+    background: #EA4968;
+    border: 1px solid #EA0000;
+    border-radius: 4px;
+}
+
+.loading-overlay {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9998;
+    align-items: center;
+    justify-content: center;
+}
+
+.captcha>div {
+    display: flex;
+}
+
+.black_btn.outline_btn {
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+.v-align-mid {
+    vertical-align: middle !important;
+}
+
+.instruct p,
+.instruct li {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* .text-center{
+            text-align: center;
+        } */
+.ol-small-roman {
+    counter-reset: list;
+    padding-left: 0;
+}
+
+.ol-small-roman>li {
+    list-style: none;
+}
+
+.ol-small-roman>li:before {
+    content: counter(list, lower-roman) ") ";
+    counter-increment: list;
+}
+
+.ul-disc-list {
+    list-style: disc;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.orange-btn {
+    color: #fff;
+    background-color: #e99805;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.checkbox-sec {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.checkbox-sec p {
+    font-size: 14px;
+}
+
+.checkbox-sec input {
+    width: 24px;
+    height: 24px;
+    margin: 0 15px 0 0;
+}
+
+.click-btn {
+    color: #fff;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.instruct {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+@media only screen and (min-width:1330px) {
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.main-btn-outline {
+  border: 1px solid #7b1fa2;
+  color: #7b1fa2;
+}
+.navbar {
+  box-shadow: 2px 2px 10px #7b1fa293;
+}
+.main-btn {
+  background-color: #7b1fa2;
+  color: white;
+}
+.white {
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.dropbtn {
+  width: auto;
+  border-radius: 50%;
+  background-color: #7b1fa2;
+  color: white !important;
+  font-size: 22px;
+  padding: 7px 16px !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #444444;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #171717;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #45115c;
+}
+
+.d-cards {
+  max-height: 140px !important;
+}
+
+.downloadModal {
+  max-width: 700px !important;
+}

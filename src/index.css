@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@300;400&family=League+Spartan:wght@300&family=Montserrat&family=Open+Sans&family=PT+Sans:ital@1&family=Poppins&family=Roboto:ital@1&family=Source+Serif+4:opsz@8..60&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    /* font-family: 'Times New Roman', Times, serif; */
+
+    padding-right: 0 !important;
+}
+.form-check {
+  position: relative;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type=checkbox]:checked+label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  top: 1px;
+  background-color: #0d8130;
+  font-family: "Montserrat";
+  border-radius: 2px;
+  border: 1px solid rgb(150 150 150 / 30%);
+}
+input[type=checkbox]:checked+label::after {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>');
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+input[type=checkbox]:checked ~ .fontsuccess {
+    color: #0d8130;
+    font-weight: bold;
+}
+::placeholder {
+  color: black;
+}
+select {
+  color: #190202;
+}
+.main-color-bg {
+  background-color: #7b1fa2;
+}
+.termncondition {
+  display: flex;
+
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 70%;
+  gap: 30px;
+}
+
+.termncondition a {
+  text-decoration: none;
+  /* color: rgb(123 31 162); */
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
